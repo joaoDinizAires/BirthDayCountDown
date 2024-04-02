@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to bottom right,#a29bfe,#e84393);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.countdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    img{
+        width: auto;
+        height: 450px;
+    }
+    span{
+        font-family: "Pacifico", cursive;
+        font-size: 64px;
+        font-weight: bolder;
+        color: #f4f4f4;
+    }
+}
+@media (max-width: 768px){
+    .countdown{
+        flex-direction: column;
+        text-align: center; 
+        height: auto; 
+        
+        img{
+            height: 300px;
+        }
+        span{
+            margin-top: 16px;
+            font-size: 48px;
+        }
+    }
+}
